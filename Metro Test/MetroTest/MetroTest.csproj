@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0532BAED-21CA-45BC-A775-E87B09785BA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MetroTest</RootNamespace>
+    <AssemblyName>MetroTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseConnections.cs" />
+    <Compile Include="Docket.cs" />
+    <Compile Include="EmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesForm.Designer.cs">
+      <DependentUpon>EmployeesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GamerSocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamerSocker.Designer.cs">
+      <DependentUpon>GamerSocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemUpdate.Designer.cs">
+      <DependentUpon>ItemUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEmployeeForm.Designer.cs">
+      <DependentUpon>NewEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewStockItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStockItem.Designer.cs">
+      <DependentUpon>NewStockItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewTable.Designer.cs">
+      <DependentUpon>NewTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderManagment.Designer.cs">
+      <DependentUpon>OrderManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock Managment.Designer.cs">
+      <DependentUpon>Stock Managment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemValiables.cs" />
+    <Compile Include="TablesManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesManagment.Designer.cs">
+      <DependentUpon>TablesManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetworkConnections.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WifiCommunications.cs" />
+    <EmbeddedResource Include="EmployeesForm.resx">
+      <DependentUpon>EmployeesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamerSocker.resx">
+      <DependentUpon>GamerSocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemUpdate.resx">
+      <DependentUpon>ItemUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmployeeForm.resx">
+      <DependentUpon>NewEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStockItem.resx">
+      <DependentUpon>NewStockItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewTable.resx">
+      <DependentUpon>NewTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderManagment.resx">
+      <DependentUpon>OrderManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Managment.resx">
+      <DependentUpon>Stock Managment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesManagment.resx">
+      <DependentUpon>TablesManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
